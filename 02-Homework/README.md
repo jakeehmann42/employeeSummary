@@ -5,7 +5,9 @@
 
 ## Description
 
-This command line application uses inquirer, fs, path and util to create prompts for the user to answer. Those answers are then recorded and used to make a HTML file that shows you team members.
+This command line application uses inquirer, fs, and path to create
+prompts for the user to answer. Those answers are then recorded and used
+to make a HTML file that shows you team members that you answered questions about.
 
 
 ## Table of Contents
@@ -25,6 +27,9 @@ This command line application uses inquirer, fs, path and util to create prompts
 
 
 ## Installation
+
+Open 'app.js' in integrated terminal,
+Then enter 'npm install...' to install your packages such as fs, and inquirer
 
 
 
