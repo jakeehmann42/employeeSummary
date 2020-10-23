@@ -8,28 +8,9 @@ class Intern extends Employee {
     }
 
 
-    getName() {
-
-    }
-
-
-    getId() {
-
-    }
-
-
-    getEmail() {
-
-    }
-
-
-    getGithub() {
-        return
-    }
-
 
     getSchool() {
-
+        return this.school;
     }
 
 
@@ -37,3 +18,6 @@ class Intern extends Employee {
         return this.Intern;
     }
 }
+
+
+module.exports = Intern

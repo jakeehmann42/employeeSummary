@@ -9,17 +9,17 @@ class Employee {
 
 
     getName() {
-
+        return this.name;
     }
 
 
     getId() {
-
+        return this.id;
     }
 
 
     getEmail() {
-
+        return this.email;
     }
 
 
@@ -27,3 +27,5 @@ class Employee {
         return this.Employee;
     }
 }
+
+module.exports = Employee
