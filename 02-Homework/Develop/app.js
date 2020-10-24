@@ -21,15 +21,15 @@ function appHome() {
                 type: "input",
                 message: "Team member's Name?",
                 name: "Engineer's Name", 
-                validate: answer => {
+                /* validate: answer => {
                     if (answer === "") {
                         return "Error: No name";
                     } else {
                         return true;
                     }
-                }
-            },
-            {
+                } */
+            }
+            /* {
                 type: "input", 
                 message: "Team member's Name?",
                 name: "Manager Name",
@@ -52,7 +52,7 @@ function appHome() {
                         return true;
                     }
                 }
-            },
+            }, */
         ]).then(Response => {
             console.log(Response);
         }).catch(err => {
