@@ -20,7 +20,7 @@ function appHome() {
             {
                 type: "input",
                 name: "Engineer", 
-                message: "Team member's Name:",
+                message: "Team member's Name?",
                 validate: answer => {
                     if (answer === "") {
                         return "Error: No name";
@@ -29,30 +29,87 @@ function appHome() {
                     }
                 }
             },
-            {
-
-            },
         ]).then(Response => {
             console.log(Response);
         }).catch(err => {
             console.log(err);
         })
-        
-    
     }
     createEngineer();
 
 
 
 
-    createManager()
-    createTeam()
-    addIntern()
 
 
-    buildTeam() {
-        //call render function for HTML
+    function createManager() {
+        inquirer.prompt([
+            {
+                type: "input",
+                name: "Manager", 
+                message: "Team member's Name?",
+                validate: answer => {
+                    if (answer === "") {
+                        return "Error: No name";
+                    } else {
+                        return true;
+                    }
+                }
+            },
+        ]).then(Response => {
+            console.log(Response);
+        }).catch(err => {
+            console.log(err);
+        })
     }
+    createManager();
+
+
+
+
+
+
+
+
+
+
+    createTeam();
+
+
+
+
+
+
+
+    function createIntern() {
+        inquirer.prompt([
+            {
+                type: "input",
+                name: "Intern", 
+                message: "Team member's Name?",
+                validate: answer => {
+                    if (answer === "") {
+                        return "Error: No name";
+                    } else {
+                        return true;
+                    }
+                }
+            },
+        ]).then(Response => {
+            console.log(Response);
+        }).catch(err => {
+            console.log(err);
+        })
+    }
+    createIntern();
+
+
+    buildTeam();
+      //call render function
+
+
+
+
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
 // generate and return a block of HTML including templated divs for each employee!
