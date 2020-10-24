@@ -68,19 +68,6 @@ function appHome() {
 
 
 
-
-
-
-
-
-    createTeam();
-
-
-
-
-
-
-
     function createIntern() {
         inquirer.prompt([
             {
@@ -102,6 +89,19 @@ function appHome() {
         })
     }
     createIntern();
+
+
+
+
+    createTeam();
+
+
+
+
+
+
+
+
 
 
     buildTeam();
