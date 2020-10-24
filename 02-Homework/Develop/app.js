@@ -19,8 +19,32 @@ function appHome() {
         inquirer.prompt([
             {
                 type: "input",
-                name: "Engineer", 
                 message: "Team member's Name?",
+                name: "Engineer's Name", 
+                validate: answer => {
+                    if (answer === "") {
+                        return "Error: No name";
+                    } else {
+                        return true;
+                    }
+                }
+            },
+            {
+                type: "input", 
+                message: "Team member's Name?",
+                name: "Manager Name",
+                validate: answer => {
+                    if (answer === "") {
+                        return "Error: No name";
+                    } else {
+                        return true;
+                    }
+                }
+            },
+            {
+                type: "input",                 
+                message: "Team member's Name?",
+                name: "Intern's Name",
                 validate: answer => {
                     if (answer === "") {
                         return "Error: No name";
@@ -42,52 +66,14 @@ function appHome() {
 
 
 
-    function createManager() {
-        inquirer.prompt([
-            {
-                type: "input",
-                name: "Manager", 
-                message: "Team member's Name?",
-                validate: answer => {
-                    if (answer === "") {
-                        return "Error: No name";
-                    } else {
-                        return true;
-                    }
-                }
-            },
-        ]).then(Response => {
-            console.log(Response);
-        }).catch(err => {
-            console.log(err);
-        })
-    }
+    
     createManager();
 
 
 
 
 
-    function createIntern() {
-        inquirer.prompt([
-            {
-                type: "input",
-                name: "Intern", 
-                message: "Team member's Name?",
-                validate: answer => {
-                    if (answer === "") {
-                        return "Error: No name";
-                    } else {
-                        return true;
-                    }
-                }
-            },
-        ]).then(Response => {
-            console.log(Response);
-        }).catch(err => {
-            console.log(err);
-        })
-    }
+    
     createIntern();
 
 
